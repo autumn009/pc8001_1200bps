@@ -23,6 +23,8 @@ mat.src mat‚Ìƒ\[ƒXƒR[ƒh@(Z80, ‚½‚¾‚µ‹tƒAƒZƒ“ƒuƒ‹Œ‹‰Ê‚©‚ç‹N‚±‚µ‚½‚à‚Ì‚Å“Ç‚Ý‚É‚
 # C, C+ƒRƒ}ƒ“ƒh‚Ì•â‘«
 CƒRƒ}ƒ“ƒh‚ÍROM‚Ì“à—e‚ðRAM‚É“]‘—‚µ‚Ä‚©‚ç1.1‘Š“–‚Éƒpƒbƒ`‚ð“–‚Ä‚ÄRAM‚ÅN-BASIC‚ð“®ì‚³‚¹‚Ü‚·B
 
+(mat‚ð1200bos‘Î‰ž‚ÅŽg‚¤‚¾‚¯‚È‚ç–³Ž‹‚µ‚Ä—Ç‚¢ƒRƒ}ƒ“ƒh‚Å‚·)
+
 C+ƒRƒ}ƒ“ƒh‚ÍCƒRƒ}ƒ“ƒh‚Ì“®ì‚É‰Á‚¦‚ÄŠJŽnƒAƒhƒŒƒX‚ð8020H‚©‚ç6020H‚ÉØ‚èŠ·‚¦ARAM40Kƒ‚[ƒh‚ÅN-BASIC‚ð—˜—p‰Â”\‚É‚µ‚Ü‚·B
 
 C, C+ƒRƒ}ƒ“ƒh‚ÍˆÈ‰º‚ÌðŒ‚ð–ž‚½‚µ‚½ƒƒ‚ƒŠŠg’£‚ðŽg—p‚µ‚Ä‚¢‚éê‡‚Ì‚ÝŽg—p‚Å‚«‚Ü‚·B
