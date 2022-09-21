@@ -1,8 +1,12 @@
 # pc8001_1200bps
 How to Modify your NEC PC-8801 hard and soft to support 1200bps CMT I/F
+
 NEC PC-8001‚ÌƒJƒZƒbƒgƒCƒ“ƒ^[ƒtƒF[ƒX‚ð1200bps‚ðƒTƒ|[ƒg‚·‚é‚½‚ß‚Ìƒn[ƒh‚Æƒ\ƒtƒg‚Å‚·B
+
 ƒn[ƒh‚Ì‰ü‘¢‚Í6–{‚ÌƒWƒƒƒ“ƒpü‚Ì’Ç‰Á‚Ì‚Ý‚ÅAê—pƒ\ƒtƒg(mat)‚Å300/600/1200bps‚ðØ‚è‘Ö‚¦‰Â”\‚Å‚·B
+
 ê—pƒ\ƒtƒg‚ðŽg‚í‚È‚¢ê‡‚Í–³‰ü‘¢‹@‚ÆŒÝŠ·‚Ì“®ì‚ð‚µ‚Ü‚·B
+
 ‚¨‚»‚ç‚­APC-8001‚ÌƒJƒZƒbƒgƒCƒ“ƒ^[ƒtƒF[ƒX‚ðƒXƒs[ƒhƒAƒbƒv‚·‚é•ûô‚Ì’†‚ÅÅˆÀ’l‚Å‚·B
 
 # docƒfƒBƒŒƒNƒgƒŠ
@@ -10,6 +14,7 @@ NEC PC-8001‚ÌƒJƒZƒbƒgƒCƒ“ƒ^[ƒtƒF[ƒX‚ð1200bps‚ðƒTƒ|[ƒg‚·‚é‚½‚ß‚Ìƒn[ƒh‚Æƒ\ƒtƒg
 
 # softwareƒfƒBƒŒƒNƒgƒŠ
 mon-EDD0.cmt ƒTƒ|[ƒgƒ\ƒtƒgmat@(cmtŒ`Ž®BƒGƒ~ƒ…ƒŒ[ƒ^j80‚Å“Ç‚Ýž‚ÝŠm”FÏ‚Ý)
+
 mat.src mat‚Ìƒ\[ƒXƒR[ƒh@(Z80, ‚½‚¾‚µ‹tƒAƒZƒ“ƒuƒ‹Œ‹‰Ê‚©‚ç‹N‚±‚µ‚½‚à‚Ì‚Å“Ç‚Ý‚É‚­‚¢)
 
 # ‚»‚Ì‘¼‚Ì•â‘«
@@ -17,40 +22,62 @@ mat.src mat‚Ìƒ\[ƒXƒR[ƒh@(Z80, ‚½‚¾‚µ‹tƒAƒZƒ“ƒuƒ‹Œ‹‰Ê‚©‚ç‹N‚±‚µ‚½‚à‚Ì‚Å“Ç‚Ý‚É‚
 
 # C, C+ƒRƒ}ƒ“ƒh‚Ì•â‘«
 CƒRƒ}ƒ“ƒh‚ÍROM‚Ì“à—e‚ðRAM‚É“]‘—‚µ‚Ä‚©‚ç1.1‘Š“–‚Éƒpƒbƒ`‚ð“–‚Ä‚ÄRAM‚ÅN-BASIC‚ð“®ì‚³‚¹‚Ü‚·B
+
 C+ƒRƒ}ƒ“ƒh‚ÍCƒRƒ}ƒ“ƒh‚Ì“®ì‚É‰Á‚¦‚ÄŠJŽnƒAƒhƒŒƒX‚ð8020H‚©‚ç6020H‚ÉØ‚èŠ·‚¦ARAM40Kƒ‚[ƒh‚ÅN-BASIC‚ð—˜—p‰Â”\‚É‚µ‚Ü‚·B
+
 C, C+ƒRƒ}ƒ“ƒh‚ÍˆÈ‰º‚ÌðŒ‚ð–ž‚½‚µ‚½ƒƒ‚ƒŠŠg’£‚ðŽg—p‚µ‚Ä‚¢‚éê‡‚Ì‚ÝŽg—p‚Å‚«‚Ü‚·B
+
 Eout $78,$80‚Å0`7fffh‚ªRAM‚ÉØ‚è‘Ö‚í‚é
 EROMƒ‚[ƒh‚Å‘‚«ž‚Ý‚ðs‚¤‚ÆRAM‚É‘‚«ž‚Þ
+
 ‚½‚¾‚µA‚±‚ÌŽd—l‚ð–ž‚½‚·PC-8001‚Íì–“‚ªŽ©•ª‚Å‰ü‘¢‚µ‚½1‘ä‚«‚è‚ÆŽv‚í‚ê‚é‚Ì‚ÅAmat‚Éƒpƒbƒ`‚ð“–‚Ä‚é•û‚ª—Ç‚¢‚ÆŽv‚í‚ê‚Ü‚·B
+
 (ƒpƒbƒ`‚ð“–‚Ä‚é‚ÆƒZƒ‹ƒtƒeƒXƒg‚ðƒpƒX‚µ‚È‚­‚È‚é‚Ì‚ÅAƒ`ƒFƒbƒNƒTƒ€‚ª‡‚¤‚æ‚¤‚Éƒ_ƒ~[‚ð‘‚«Š·‚¦‚é•K—v‚ ‚è)
 
 # mat‚ð‘‚«Š·‚¦‚éê‡‚Ì’ˆÓ
-mat‚Íƒ[ƒNƒGƒŠƒA‚Ì–¢Žg—p—Ìˆæ‚É‹­ˆø‚É“ü‚èž‚Þ‚Ì‚ÅAƒtƒŠ[ƒGƒŠƒA‚ÍŒ¸‚ç‚µ‚Ü‚¹‚ñ‚ªA‰ó‚ê‚â‚·‚¢‚ÆŒ¾‚¦‚Ü‚·B
-‚Å‚·‚Ì‚ÅAƒZƒ‹ƒtƒeƒXƒg‚ðs‚¢‚Ü‚·B
+mat‚Íƒ[ƒNƒGƒŠƒA‚Ì–¢Žg—p—Ìˆæ‚É‹­ˆø‚É“ü‚èž‚Þ‚Ì‚ÅAƒtƒŠ[ƒGƒŠƒA‚ÍŒ¸‚ç‚µ‚Ü‚¹‚ñ‚ªA‰ó‚ê‚â‚·‚¢‚ÆŒ¾‚¦‚Ü‚·B‚Å‚·‚Ì‚ÅAƒZƒ‹ƒtƒeƒXƒg‚ðs‚¢‚Ü‚·B
+
 ƒZƒ‹ƒtƒeƒXƒg‚ÍƒR[ƒh‚ÌƒoƒCƒg‚Ì‘˜a‚ª0‚©‚Ç‚¤‚©‚Å”»’è‚µ‚Ä‚¢‚Ü‚·B
+
 ‘˜a‚ð0‚É‚·‚é‚½‚ß‚Éƒ_ƒ~[‚ÌƒoƒCƒg‚ª“ü‚Á‚Ä‚¢‚Ü‚·B
+
 ‚¨‚»‚ç‚­Aƒ\[ƒXã‚ÌŽÀs‚³‚ê‚é‰Â”\«‚Ì‚È‚¢RRCA‚ª‚»‚ê‚É‚ ‚½‚é‚ÆŽv‚í‚ê‚Ü‚·B
+
 ‚à‚µAƒR[ƒh‚ð‘‚«Š·‚¦‚½ê‡‚ÍƒR[ƒh‚ÌƒoƒCƒg‚Ì‘˜a‚ª0‚É‚È‚é‚æ‚¤‚ÉA‚±‚Ì–½—ß‚ð‘‚«Š·‚¦‚Ü‚·B
+
 ŽÀs‚³‚ê‚È‚¢‚Ì‚ÅA‚Ç‚ñ‚È’l‚Å‚à\‚¢‚Ü‚¹‚ñB
 
 # PC-8801‚ÌN-BASICƒ‚[ƒh‚ÅŽg‚¤ê‡‚Ìƒqƒ“ƒg
 ˆÈ‰º‚Ìî•ñ‚Í–³ˆóPC-8801—p‚Å‚·B‘¼‚Ìƒ‚ƒfƒ‹‚Å‚à“¯‚¶‚©‚Í•ª‚©‚è‚Ü‚¹‚ñB
-PC-8801‚ÌN-BASICƒ‚[ƒh‚Å“Ç‚Ýž‚Þ‚ÆŽg—pƒ[ƒNƒGƒŠƒA‚Ì‘Šˆá‚©‚çƒZƒ‹ƒtƒeƒXƒg‚ð’Ê‚è‚Ü‚¹‚ñB
+
+mat‚ÍAPC-8801‚ÌN-BASICƒ‚[ƒh‚Å1200bps‚Ìƒ[ƒhƒZ[ƒu‚ðs‚¤Žè’i‚Æ‚µ‚ÄŽg—p‚Å‚«‚Ü‚·B‚»‚ÌÛ‰ü‘¢‚Í•K—v‚Æ‚µ‚Ü‚¹‚ñB
+
+‚µ‚©‚µAPC-8801‚ÌN-BASICƒ‚[ƒh‚Å“Ç‚Ýž‚Þ‚ÆŽg—pƒ[ƒNƒGƒŠƒA‚Ì‘Šˆá‚©‚çƒZƒ‹ƒtƒeƒXƒg‚ð’Ê‚è‚Ü‚¹‚ñB
+
 GEE98‚Å’¼Ú‹N“®‚·‚é‚Æ“®‚­‚±‚Æ‚Í“®‚«‚Ü‚·B
+
 ‚±‚ÌŽžAƒZƒŒƒNƒ^‚ÌŽd—l‚Ì‘Šˆá‚©‚ç‘¬“x‘I‘ð‚ÌƒRƒ}ƒ“ƒh‚ª•Ï‰»‚µ‚Ü‚·B
+
 1200bps‚ÍHƒRƒ}ƒ“ƒh‚Å‚Í‚È‚­SƒRƒ}ƒ“ƒh‚Å‘I‘ð‚µ‚Ü‚·B(–³‰ü‘¢‚Å1200bps‚ðŽg—p‚Å‚«‚Ü‚·)
+
 PC-8801‚Å‚Í300bps‚ÍƒTƒ|[ƒg‚µ‚Ä‚¨‚ç‚¸Žg—p‚Å‚«‚Ü‚¹‚ñB
 
 # mat‚Ìƒ\[ƒXƒR[ƒh‚Ì’ˆÓ
 mat‚Í‚à‚Æ‚à‚Æƒnƒ“ƒhƒAƒZƒ“ƒuƒ‹‚ÅŠJ”­‚³‚ê‚Ä‚¢‚½‚Ì‚ÅA‚±‚Ìƒ\[ƒXƒR[ƒh‚Í‹tƒAƒZƒ“ƒuƒ‹Œ‹‰Ê‚©‚ç‹N‚±‚µ‚½‚à‚Ì‚ÆŽv‚í‚ê‚Ü‚·B
+
 ‚»‚Ì‚½‚ßA–{—ˆDB–½—ß‚Å‘‚©‚ê‚é‚×‚«•”•ª‚ªZ80‚Ìƒjƒ‚ƒjƒbƒN‚Å‘‚©‚ê‚Ä‚¢‚é‰ÓŠ‚ª‚ ‚èA“Ç‚Ý‚É‚­‚¢‚ÆŒ¾‚¦‚Ü‚·B
+
 •¶Žš‚É‘Š“–‚·‚éƒR[ƒh‚à16i”‚Ì‚Ü‚Ü‚Å‚·B
+
 ‚»‚±‚Í’ˆÓ‚µ‚Ä‚²——‰º‚³‚¢B
+
 ƒR[ƒh‚Ì‡”Ô‚ª‚²‚¿‚á‚²‚¿‚á‚È‚Ì‚àAŠù‘¶‚ÌƒR[ƒh‚É’Ç‰Á‚·‚éŒ`‚Åƒnƒ“ƒhƒAƒZƒ“ƒuƒ‹‚ÅƒR[ƒh‚ð’Ç‰Á‚µ‚½‚½‚ß‚Å‚·B
 
 # ƒGƒ~ƒ…ƒŒ[ƒ^‚Å‚ÌŽg—p‚É‚Â‚¢‚Ä
 T88, CMT‚È‚Ç‚ÌŒ`Ž®‚Åƒf[ƒ^‚ðˆµ‚¤ê‡‚ÍAWAVŒ`Ž®‚Ì‰¹ºƒf[ƒ^‚©‚ç•ÏŠ·‚·‚éÛ‚É‘¬“x·‚ð‹zŽû‚µ‚Ä‚µ‚Ü‚¤‚Ì‚ÅAmat‚Ì1200bpsƒ‚[ƒh‚Å•Û‘¶‚µ‚½ƒf[ƒ^‚Å‚ ‚Á‚Ä‚àA–³C³‚ÌƒGƒ~ƒ…ƒŒ[ƒ^‚Å“Ç‚Ýž‚ß‚Ü‚·B
+
 ‚Â‚Ü‚èˆÈ‰º‚Ì—¬‚ê‚Í‰Â”\‚Å‚·B
+
 1) mat‚Ì1200bpsƒ‚[ƒh‚Å•Û‘¶
 2) ‰¹ºƒf[ƒ^‚ðWAVƒtƒ@ƒCƒ‹‚ÉŽæ‚èž‚Ý
 3) Wav2T88‚ÅT88Œ`Ž®‚É•ÏŠ·
